@@ -1,0 +1,10 @@
+server:
+  port: 8890
+spring:
+  application:
+    name: gatewayservice
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka

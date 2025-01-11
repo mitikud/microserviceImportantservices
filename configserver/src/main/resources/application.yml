@@ -1,0 +1,19 @@
+server:
+  port: 8050
+
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/mitikud/config-repo
+          clone-on-start: true
+          username: mitikud
+          password: Jestinod98661!!
+          default-lab: main
+#eureka:
+#  client:
+#    service-url:
+#      default-zone: http://localhost:8761/eureka

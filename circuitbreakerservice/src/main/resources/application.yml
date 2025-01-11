@@ -1,0 +1,28 @@
+
+server:
+  port: 8010
+
+spring:
+  application:
+    name: circuitbreakerservice
+  config.import: optional:configserver:http://localhost:8050
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${random.value}
+
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      getInvoiceCB:
+        failure-rate-threshold: 80 #indicates that if 80% of requests are getting failed, open the circuit ie. Make the Circuit Breaker state as Open.
+        sliding-window-size: 10 # indicates that if 80% of requests out of 10 (it means 8) are failing, open the circuit.
+        sliding-window-type: COUNT_BASED #indicates that we are using COUNT_BASED sliding window. Another type is TIME_BASED.
+        minimum-number-of-calls: 5 # indicates that we need at least 5 calls to calculate the failure rate threshold.
+        automatic-transition-from-open-to-half-open-enabled: true #indicates that don’t switch directly from the open state to the closed state, consider the half-open state also.
+        permitted-number-of-calls-in-half-open-state: 4 #indicates that when on half-open state, consider sending 4 requests. If 80% of them are failing, switch circuit breaker to open state.
+        wait-duration-in-open-state: 1s #indicates the waiting time interval while switching from the open state to the closed state.

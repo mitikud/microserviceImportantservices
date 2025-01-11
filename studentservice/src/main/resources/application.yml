@@ -1,0 +1,22 @@
+server:
+  port: 9100
+
+spring:
+  application:
+    name: studentservice
+  config.import: optional:configserver:http://localhost:8050
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${random.value}
+
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info, health

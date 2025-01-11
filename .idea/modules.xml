@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/basic-microservice.iml" filepath="$PROJECT_DIR$/.idea/basic-microservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookservice/bookservice.iml" filepath="$PROJECT_DIR$/bookservice/bookservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bulkheadservice/bulkheadservice/bulkheadservice.iml" filepath="$PROJECT_DIR$/bulkheadservice/bulkheadservice/bulkheadservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cartservice/cartservice.iml" filepath="$PROJECT_DIR$/cartservice/cartservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circuitbreakerservice/circuitbreakerservice.iml" filepath="$PROJECT_DIR$/circuitbreakerservice/circuitbreakerservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/configserver/configserver.iml" filepath="$PROJECT_DIR$/configserver/configserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eurekaserver/eurekaserver.iml" filepath="$PROJECT_DIR$/eurekaserver/eurekaserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gatewayservice/gatewayservice.iml" filepath="$PROJECT_DIR$/gatewayservice/gatewayservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/orderservice/orderservice.iml" filepath="$PROJECT_DIR$/orderservice/orderservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/paymentservice/paymentservice.iml" filepath="$PROJECT_DIR$/paymentservice/paymentservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ratelimiterservice/ratelimiterservice.iml" filepath="$PROJECT_DIR$/ratelimiterservice/ratelimiterservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/retryrservice/retryrservice/retryrservice.iml" filepath="$PROJECT_DIR$/retryrservice/retryrservice/retryrservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studentservice/studentservice.iml" filepath="$PROJECT_DIR$/studentservice/studentservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/timelimitreservice/timelimitreservice/timelimitreservice.iml" filepath="$PROJECT_DIR$/timelimitreservice/timelimitreservice/timelimitreservice.iml" />
+    </modules>
+  </component>
+</project>

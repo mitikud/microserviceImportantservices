@@ -1,0 +1,24 @@
+
+server:
+  port: 8015
+
+spring:
+  application:
+    name: timelimitreservice
+  config.import: optional:configserver:http://localhost:8050
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${random.value}
+
+
+
+resilience4j:
+  timelimiter:
+    instances:
+      getMessageTL:
+        timeout-duration: 1ms # indicates that the maximum amount of time a request can take to respond is 1 millisecond
+        cancel-running-future: false #indicates that do not cancel the Running Completable Futures After TimeOut.

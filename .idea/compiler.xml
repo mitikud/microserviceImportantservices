@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eurekaserver" />
+        <module name="ratelimiterservice" />
+        <module name="timelimitreservice" />
+        <module name="configserver" />
+        <module name="circuitbreakerservice" />
+        <module name="retryrservice" />
+        <module name="gatewayservice" />
+        <module name="bulkheadservice" />
+      </profile>
+      <profile name="Annotation profile for studentservice" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="studentservice" />
+      </profile>
+      <profile name="Annotation profile for paymentservice" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
+        </processorPath>
+        <module name="paymentservice" />
+      </profile>
+      <profile name="Annotation profile for cartservice" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar" />
+        </processorPath>
+        <module name="bookservice" />
+        <module name="cartservice" />
+        <module name="orderservice" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bookservice" target="17" />
+      <module name="bulkheadservice" target="17" />
+      <module name="cartservice" target="17" />
+      <module name="circuitbreakerservice" target="17" />
+      <module name="configserver" target="17" />
+      <module name="eurekaserver" target="17" />
+      <module name="gatewayservice" target="17" />
+      <module name="orderservice" target="17" />
+      <module name="paymentservice" target="17" />
+      <module name="ratelimiterservice" target="17" />
+      <module name="retryrservice" target="17" />
+      <module name="studentservice" target="17" />
+      <module name="timelimitreservice" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="bookservice" options="-parameters" />
+      <module name="bulkheadservice" options="-parameters" />
+      <module name="cartservice" options="-parameters" />
+      <module name="circuitbreakerservice" options="-parameters" />
+      <module name="configserver" options="-parameters" />
+      <module name="eurekaserver" options="-parameters" />
+      <module name="gatewayservice" options="-parameters" />
+      <module name="orderservice" options="-parameters" />
+      <module name="paymentservice" options="-parameters" />
+      <module name="ratelimiterservice" options="-parameters" />
+      <module name="retryrservice" options="-parameters" />
+      <module name="studentservice" options="-parameters" />
+      <module name="timelimitreservice" options="-parameters" />
+    </option>
+  </component>
+</project>

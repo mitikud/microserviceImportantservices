@@ -1,0 +1,36 @@
+
+server:
+  port: 8020
+
+spring:
+  application:
+    name: retryrservice
+  config.import: optional:configserver:http://localhost:8050
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${random.value}
+
+#rate limiter
+#resilience4j:
+#  ratelimiter:
+#    instances:
+#      getMessageRateLimit:
+#        limit-for-period: 2 #2 requests are allowed
+#        limit-refresh-period: 5s #in 5 seconds duration
+#        timeout-duration: 0 #there is no timeout duration
+#        #which means after completion of 5 seconds, the user can send request again.
+
+# Retry
+  resilience4j:
+    retry:
+      instances:
+        getInvoiceRetry:
+          max-attempts: 5
+          wait-duration: 2s
+          retry-exceptions: org.springframework.web.client.ResourceAccessException
+
+

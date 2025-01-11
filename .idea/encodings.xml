@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/bookservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bookservice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bulkheadservice/bulkheadservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bulkheadservice/bulkheadservice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cartservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cartservice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/circuitbreakerservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/circuitbreakerservice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/configserver/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/configserver/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eurekaserver/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eurekaserver/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gatewayservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gatewayservice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/orderservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/orderservice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/paymentservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/paymentservice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ratelimiterservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ratelimiterservice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/retryrservice/retryrservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/retryrservice/retryrservice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/studentservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/studentservice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/timelimitreservice/timelimitreservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/timelimitreservice/timelimitreservice/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
