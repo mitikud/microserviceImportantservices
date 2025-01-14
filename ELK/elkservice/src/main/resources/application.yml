@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: elkservice
+
+logging:
+  file:
+    name: C:/Users/mitea/Desktop/basic-microservice/ELK/ELK_Stack/elktest.log
