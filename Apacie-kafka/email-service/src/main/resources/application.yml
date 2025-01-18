@@ -1,0 +1,6 @@
+
+server:
+  port: 9083
+spring:
+  application:
+    name: email-service
